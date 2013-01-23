@@ -1,0 +1,19 @@
+Name: ltrace
+Summary: ltrace intercepts and records dynamic library calls
+Version: 0.7.2
+Release: 1
+Group: Development Platform/Platform SDK
+License: GPL v2
+URL: git://git.debian.org/git/collab-maint/ltrace.git
+Sources:
+    - ltrace-%{version}.tar.gz
+Description: |
+ ltrace intercepts and records dynamic library calls which are called by an executed process and the signals received by that process. It can also intercept and print the system calls executed by the program.
+
+PkgConfigBR:
+    - glib-2.0
+PkgBR:
+    - binutils-devel
+    - elfutils-devel
+Configure: configure
+
